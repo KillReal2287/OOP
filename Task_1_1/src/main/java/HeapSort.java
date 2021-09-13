@@ -22,6 +22,13 @@ public class HeapSort
         }
     }
 
+    /**
+     *
+     * @param arr - непосредственно массив для сортировки
+     * @param n - длина массива
+     * @param i - индекс корня в куче на момент создания
+     */
+
     // Процедура для преобразования в двоичную кучу поддерева с корневым узлом i, что является
 // индексом в arr[]. n - размер кучи
     void heapify(int arr[], int n, int i)
@@ -48,6 +55,8 @@ public class HeapSort
             heapify(arr, n, largest);
         }
     }
+
+
 
     /* Вспомогательная функция для вывода на экран массива размера n */
     static void printArray(int arr[])
