@@ -59,7 +59,7 @@ public class HeapSort
 
 
     /**
-     * i - индекс, по которому идет непосредственно перебор для выводы
+     * printArray - непосредственно вывод массива
      * @param arr - отсортированный массив
      */
     static void printArray(int arr[])
