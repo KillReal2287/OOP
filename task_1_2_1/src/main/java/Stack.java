@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class Stack<Type>{
 
@@ -10,7 +9,7 @@ public class Stack<Type>{
     private Type[] stack = (Type[]) new Object[0];
 
     /**
-     * returns number of elements in stack
+     * count - returns number of elements in stack
      * @return - returns how how many elements in stack right now
      */
     public int count(){
@@ -19,22 +18,22 @@ public class Stack<Type>{
 
     /**
      * push one element type Type to stack
-     * @param aa - item
+     * @param element - item
      */
-    public void push(Type aa){
+    public void push(Type element){
         if (count == max_len){
             max_len = max_len * 2 + 1;
             stack = Arrays.copyOf(stack, max_len);
         }
-        stack[count++] = aa;
+        stack[count++] = element;
     }
 
     /**
      * push array of elements type Type to stack
-     * @param aa - array with items
+     * @param element - array with items
      */
-    public void pushStack(Type[] aa){
-        for (Type type : aa) {
+    public void pushStack(Type[] element){
+        for (Type type : element) {
             if (count == max_len) {
                 max_len = max_len * 2 + 1;
                 stack = Arrays.copyOf(stack, max_len);
@@ -57,7 +56,7 @@ public class Stack<Type>{
     }
 
     /**
-     * delete items from stack
+     * popstack - delete items from stack
      * @param number - how many items we should delete
      */
     public void popStack(int number){
@@ -71,7 +70,7 @@ public class Stack<Type>{
     }
 
     /**
-     * write current stack
+     * write stack
      */
     public void write(){
         for (int i = 0; i < count; i++)
