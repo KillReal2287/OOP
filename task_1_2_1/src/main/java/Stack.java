@@ -4,20 +4,16 @@ public class Stack<Type>{
 
     private int count = 0;
     private int max_len = 0;
-
-    @SuppressWarnings("unchecked")
     private Type[] stack = (Type[]) new Object[0];
-
     /**
-     * count - returns number of elements in stack
-     * @return - returns how how many elements in stack right now
+     * returns number of elements in stack
+     * @return - returns how many elements in stack right now
      */
     public int count(){
         return count;
     }
-
     /**
-     * push one element type Type to stack
+     * push one element "Type" to stack
      * @param element - item
      */
     public void push(Type element){
@@ -25,52 +21,59 @@ public class Stack<Type>{
             max_len = max_len * 2 + 1;
             stack = Arrays.copyOf(stack, max_len);
         }
-        stack[count++] = element;
+        stack[count] = element;
+        count += 1;
     }
 
     /**
-     * push array of elements type Type to stack
+     * push array of elements "Type" to stack
      * @param element - array with items
      */
-    public void pushStack(Type[] element){
-        for (Type type : element) {
-            if (count == max_len) {
-                max_len = max_len * 2 + 1;
-                stack = Arrays.copyOf(stack, max_len);
-            }
-            stack[count++] = type;
-        }
+    public void pushStack(Stack<Type> element){
+
+        int res = element.count();
+        max_len += res*2;
+        count += res;
+        stack = Arrays.copyOf(stack, max_len);
+
+        for (int i = 0; i < res; i++)
+            stack[count - i - 1] = element.pop();
     }
 
     /**
      * delete one element from stack
      */
-    public void pop(){
-        try {
-            stack[count - 1] = stack[count - 1];
+    public Type pop(){
+        if (count == 0)
+            throw new IndexOutOfBoundsException("stack is empty");
+        else{
             count -= 1;
-        }
-        catch (IndexOutOfBoundsException e){
-            throw new IndexOutOfBoundsException("stack empty");
+            return stack[count];
         }
     }
 
     /**
-     * popstack - delete items from stack
+     * delete items from stack
      * @param number - how many items we should delete
      */
-    public void popStack(int number){
-        try {
-            stack[count - number] = stack[count - number];
+    public Stack<Type> popStack(int number){
+        Stack<Type> answer = new Stack<>();
+        if (count - number < 0){
+            if (count == 0)
+                throw new IndexOutOfBoundsException("stack is empty");
+            else
+                throw new IndexOutOfBoundsException("there are not so many elements on the stack");
+        }
+        else{
+            for (int i = 0; i < number; i++)
+                answer.push(stack[count - number + i]);
             count -= number;
         }
-        catch (IndexOutOfBoundsException e){
-            throw new IndexOutOfBoundsException("there are not so many elements on the stack");
-        }
+        return answer;
     }
 
     /**
-     * write stack
+     * write current stack
      */
     public void write(){
         for (int i = 0; i < count; i++)

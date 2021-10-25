@@ -16,30 +16,38 @@ public class StackTest {
         test.push(345);
         assertEquals(2, test.count());
 
-        Integer[] help = {6, 99, 100};
+        Stack<Integer> help = new Stack<>();
+        help.push(6);
+        help.push(99);
+        help.push(100);
         test.pushStack(help);
         assertEquals(5, test.count());
 
         test.write();
 
-        test.pop();
-        assertEquals(4, test.count());
+        Integer ret;
+        ret  = test.pop();
+        assertEquals(100, ret);
 
-        test.popStack(3);
-        assertEquals(1, test.count());
+        Stack<Integer> testing;
+        testing = test.popStack(3);
+        assertEquals(3, testing.count());
+
+        ret = testing.pop();
+        assertEquals(99, ret);
 
         test.write();
 
-        test.pop();
-        assertEquals(0, test.count());
+        ret = test.pop();
+        assertEquals(1, ret);
 
         Throwable thrown = assertThrows(IndexOutOfBoundsException.class, test::pop);
-        assertEquals(thrown.getMessage(), "stack empty");
+        assertEquals(thrown.getMessage(), "stack is empty");
 
         assertEquals(0, test.count());
 
         Throwable thrown_1 = assertThrows(IndexOutOfBoundsException.class, () -> test.popStack(2));
-        assertEquals(thrown_1.getMessage(), "there are not so many elements on the stack");
+        assertEquals(thrown_1.getMessage(), "stack is empty");
 
         test.push(12);
         assertEquals(1, test.count());
@@ -60,32 +68,40 @@ public class StackTest {
         test.push("bb");
         assertEquals(2, test.count());
 
-        String[] help = {"cc", "dd", "ee"};
+        Stack<String> help = new Stack<>();
+        help.push("cc");
+        help.push("dd");
+        help.push("ee");
         test.pushStack(help);
         assertEquals(5, test.count());
 
         test.write();
 
-        test.pop();
-        assertEquals(4, test.count());
+        String ret;
+        ret  = test.pop();
+        assertEquals("ee", ret);
 
-        test.popStack(3);
-        assertEquals(1, test.count());
+        Stack<String> testing;
+        testing = test.popStack(3);
+        assertEquals(3, testing.count());
+
+        ret = testing.pop();
+        assertEquals("dd", ret);
 
         test.write();
 
-        test.pop();
-        assertEquals(0, test.count());
+        ret  = test.pop();
+        assertEquals("aa", ret);
 
         Throwable thrown = assertThrows(IndexOutOfBoundsException.class, test::pop);
-        assertEquals(thrown.getMessage(), "stack empty");
+        assertEquals(thrown.getMessage(), "stack is empty");
 
         assertEquals(0, test.count());
 
         Throwable thrown_1 = assertThrows(IndexOutOfBoundsException.class, () -> test.popStack(2));
-        assertEquals(thrown_1.getMessage(), "there are not so many elements on the stack");
+        assertEquals(thrown_1.getMessage(), "stack is empty");
 
-        test.push("testing");
+        test.push("Stack");
         assertEquals(1, test.count());
 
         Throwable thrown_2 = assertThrows(IndexOutOfBoundsException.class, () -> test.popStack(2));
