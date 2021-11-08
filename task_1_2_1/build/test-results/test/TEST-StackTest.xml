@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StackTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-25T08:37:01" hostname="MacBook-Pro-Kirill.local" time="0.019">
+  <properties/>
+  <testcase name="testInt()" classname="StackTest" time="0.017"/>
+  <testcase name="testStr()" classname="StackTest" time="0.001"/>
+  <system-out><![CDATA[1
+345
+6
+99
+100
+
+1
+
+aa
+bb
+cc
+dd
+ee
+
+aa
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
