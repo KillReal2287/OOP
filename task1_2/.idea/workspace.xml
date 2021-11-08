@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0a48bb-c7b7-4e28-a2ac-961e2ed48e92" name="Changes" comment="finder">
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/kmp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/src/main/java/Kmp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/src/test/java/KmpTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kmp/test3.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="df0a48bb-c7b7-4e28-a2ac-961e2ed48e92" name="Changes" comment="finder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1z243sHpCoUZdnjhDuME5HJLzD4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,6 +56,7 @@
       <updated>1633332653441</updated>
       <workItem from="1633332655825" duration="458000" />
       <workItem from="1633448297686" duration="67000" />
+      <workItem from="1635304226334" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="finder">
       <created>1633332860145</created>
