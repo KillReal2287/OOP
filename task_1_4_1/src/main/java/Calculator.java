@@ -6,10 +6,10 @@ public class Calculator {
 
     public double Calculate(String str) throws Exception{
             String [] array = str.split(" ");
+            double a;
+            double b;
+            double res = 0.0;
             for (int i = array.length-1; i >= 0; i--) {
-                double a;
-                double b;
-                double res = 0.0;
                 switch (array[i]){
                     case "+":
                         a = CanPop();
