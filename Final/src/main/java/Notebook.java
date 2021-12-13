@@ -55,11 +55,10 @@ public class Notebook {
         Note[] notes = take().toArray(new Note[0]);
         writeNotes(notes);
     }
-    public void show(Date startTime, Date endTime, String[] words){
+    public void show(Date startTime, Date endTime){
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         List<Note> notes = take();
         Note[] notes = (Note[]) notes.stream().filter(note -> note.getTime().after(startTime) && note.getTime().before(endTime)).toArray();
-        int flag;
         for (Note note: notes) {
             System.out.println(note.getTitle());
             System.out.println(note.getNote());
