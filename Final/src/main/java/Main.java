@@ -30,12 +30,14 @@ public class Main {
             case ("-show"): {
                 if (args.length == 2)
                     notebook.show();
-                else if (args.length == 4){
+                else if (args.length >= 5){
                     String[] words = Arrays.copyOfRange(args, 4, args.length);
                     notebook.show(dateFormat.parse(args[2]), dateFormat.parse(args[3]), words);
                 }
-                else
-                    System.err.println("incorrect input");
+                else{
+                    System.out.println("Incorrect input");
+                }
+
             }
             default:
         }

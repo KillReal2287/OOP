@@ -55,16 +55,26 @@ public class Notebook {
         Note[] notes = take().toArray(new Note[0]);
         writeNotes(notes);
     }
-    public void show(Date startTime, Date endTime){
+    public void show(Date startTime, Date endTime, String[] words){
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         List<Note> notes = take();
-        Note[] notes = (Note[]) notes.stream().filter(note -> note.getTime().after(startTime) && note.getTime().before(endTime)).toArray();
-        for (Note note: notes) {
-            System.out.println(note.getTitle());
-            System.out.println(note.getNote());
-            System.out.println(dateFormat.format(note.getTime()));
-            System.out.println();
+        Note[] notess = (Note[]) notess.stream().filter(note -> note.getTime().after(startTime) && note.getTime().before(endTime)).toArray();
 
+        int checker;
+        for (Note note: notess) {
+            checker = 1;
+            for (String word: words) {
+                if (!note.getNote().contains(word)){
+                    checker = 0;
+                    break;
+                }
+            }
+            if (checker == 1){
+                System.out.println(dateFormat.format(note.getTime()));
+                System.out.println(note.getTitle());
+                System.out.println(note.getNote());
+                System.out.println();
+            }
         }
     }
     public void deleteNotebook(){
