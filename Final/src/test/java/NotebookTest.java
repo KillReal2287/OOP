@@ -4,7 +4,7 @@ import java.util.Date;
 public class NotebookTest {
     @Test
     public void getEmptyNotebook(){
-        notebook.Notebook notebook = new notebook.Notebook("empty.json");
+        Notebook.Notebook notebook = new notebook.Notebook("empty.json");
         Note[] notes = notebook.take().toArray(new Note[0]);
         Assertions.assertArrayEquals(notes, new Note[0]);
         notebook.deleteNotebook();

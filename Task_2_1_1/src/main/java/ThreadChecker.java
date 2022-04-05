@@ -10,9 +10,20 @@ public class ThreadChecker {
         List<Integer> arr = Arrays.stream(arrays).collect(Collectors.toList());
         int repeats = arr.size() / threadsCount;
         Searcher[] threads = new Searcher[threadsCount];
-
+        int begin = 0;
+        int end = 0;
+        int reduce = arr.size() % threadsCount;
         for (int i = 0; i < threadsCount; i++) {
-            threads[i] = new Searcher(arr.subList(i * repeats, (i + 1) * repeats));
+            if (reduce > 0){
+                end = begin + repeats + 1;
+                threads[i] = new Searcher(arr.subList(begin, end));
+                reduce--;
+            }
+            else{
+                end = begin + repeats;
+                threads[i] = new Searcher(arr.subList(begin,end));
+            }
+            begin = end;
             threads[i].start();
         }
 

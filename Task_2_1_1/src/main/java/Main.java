@@ -9,7 +9,7 @@ public class Main {
         }
         digitals[999] = 10;
         ThreadChecker threadChecker = new ThreadChecker();
-        System.out.println(threadChecker.threadPrime(digitals,16));
+        System.out.println(threadChecker.threadPrime(digitals,2));
         System.out.println(System.currentTimeMillis() - time);
     }
 }

@@ -38,10 +38,18 @@ public class CheckerTest {
         Assertions.assertTrue(ParallelSolution.Checker(testArrayLong));
     }
 
+
+
     @Test
     public void threadTest2() throws InterruptedException, ExecutionException {
         ThreadChecker thread = new ThreadChecker();
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,2));
+    }
+
+    @Test
+    public void threadTest3() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,3));
     }
 
     @Test
@@ -51,9 +59,51 @@ public class CheckerTest {
     }
 
     @Test
+    public void threadTest5() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,5));
+    }
+
+    @Test
+    public void threadTest6() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,6));
+    }
+
+    @Test
+    public void threadTest7() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,7));
+    }
+
+    @Test
     public void threadTest8() throws InterruptedException, ExecutionException {
         ThreadChecker thread = new ThreadChecker();
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,8));
+    }
+
+    @Test
+    public void threadTest9() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,9));
+    }
+
+    @Test
+    public void threadTest10() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,10));
+    }
+
+    @Test
+    public void threadTest11() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,11));
+    }
+
+    @Test
+    public void threadTest12() throws InterruptedException, ExecutionException {
+        ThreadChecker thread = new ThreadChecker();
+        Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,12));
     }
 
     @Test
