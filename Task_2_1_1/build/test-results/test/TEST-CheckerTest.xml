@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CheckerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-04-05T06:55:05" hostname="MacBook-Pro-Kirill.local" time="0.414">
+<testsuite name="CheckerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-04-05T08:52:37" hostname="MacBook-Pro-Kirill.local" time="0.368">
   <properties/>
-  <testcase name="sequentialTest()" classname="CheckerTest" time="0.141"/>
-  <testcase name="streamTest()" classname="CheckerTest" time="0.022"/>
-  <testcase name="threadTest10()" classname="CheckerTest" time="0.021"/>
-  <testcase name="threadTest11()" classname="CheckerTest" time="0.015"/>
-  <testcase name="threadTest12()" classname="CheckerTest" time="0.013"/>
-  <testcase name="threadTest16()" classname="CheckerTest" time="0.013"/>
-  <testcase name="threadTest2()" classname="CheckerTest" time="0.041"/>
-  <testcase name="threadTest3()" classname="CheckerTest" time="0.028"/>
+  <testcase name="sequentialTest()" classname="CheckerTest" time="0.098"/>
+  <testcase name="streamTest()" classname="CheckerTest" time="0.02"/>
+  <testcase name="threadTest10()" classname="CheckerTest" time="0.016"/>
+  <testcase name="threadTest11()" classname="CheckerTest" time="0.016"/>
+  <testcase name="threadTest12()" classname="CheckerTest" time="0.014"/>
+  <testcase name="threadTest16()" classname="CheckerTest" time="0.016"/>
+  <testcase name="threadTest2()" classname="CheckerTest" time="0.044"/>
+  <testcase name="threadTest3()" classname="CheckerTest" time="0.029"/>
   <testcase name="threadTest4()" classname="CheckerTest" time="0.022"/>
-  <testcase name="threadTest5()" classname="CheckerTest" time="0.022"/>
+  <testcase name="threadTest5()" classname="CheckerTest" time="0.017"/>
   <testcase name="threadTest6()" classname="CheckerTest" time="0.018"/>
-  <testcase name="threadTest7()" classname="CheckerTest" time="0.017"/>
-  <testcase name="threadTest8()" classname="CheckerTest" time="0.016"/>
-  <testcase name="threadTest9()" classname="CheckerTest" time="0.017"/>
+  <testcase name="threadTest7()" classname="CheckerTest" time="0.016"/>
+  <testcase name="threadTest8()" classname="CheckerTest" time="0.015"/>
+  <testcase name="threadTest9()" classname="CheckerTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

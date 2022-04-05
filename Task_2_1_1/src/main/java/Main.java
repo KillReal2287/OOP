@@ -1,15 +1,15 @@
-import java.util.concurrent.ExecutionException;
+
 
 public class Main {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
-        long time = System.currentTimeMillis();
-        Integer[] digitals = new Integer[1000];
-        for (int i = 0; i < 1000-1; i++) {
-            digitals[i] = 7;
+    public static void main(String[] args){
+        final Integer[] testArray = {6997901, 6997927, 6997937, 6997967, 6998009, 6998029, 6998039, 6998051, 6998053};
+        final Integer[] bigArray = new Integer[10000];
+        for (int i = 0; i < bigArray.length; i++) {
+            bigArray[i] = testArray[i % testArray.length];
         }
-        digitals[999] = 10;
-        ThreadChecker threadChecker = new ThreadChecker();
-        System.out.println(threadChecker.threadPrime(digitals,2));
+        bigArray[bigArray.length - 1] = 1048561;
+        long time = System.currentTimeMillis();
+        ThreadChecker.threadPrime(bigArray,2);
         System.out.println(System.currentTimeMillis() - time);
     }
 }

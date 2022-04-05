@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
-import java.util.concurrent.ExecutionException;
+
 
 public class CheckerTest {
 
@@ -31,84 +31,69 @@ public class CheckerTest {
 
     @Test
     public void streamTest() {
-        Integer[] testArrayLong = new Integer[bigArray.length];
-        for(int index = 0; index < bigArray.length; index++) {
-            testArrayLong[index] = bigArray[index];
-        }
-        Assertions.assertTrue(ParallelSolution.Checker(testArrayLong));
+
+        Assertions.assertTrue(ParallelSolution.Checker(bigArray));
     }
 
 
 
     @Test
-    public void threadTest2() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest2() {
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,2));
     }
 
     @Test
-    public void threadTest3() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest3(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,3));
     }
 
     @Test
-    public void threadTest4() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest4(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,4));
     }
 
     @Test
-    public void threadTest5() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest5(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,5));
     }
 
     @Test
-    public void threadTest6() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest6(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,6));
     }
 
     @Test
-    public void threadTest7() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest7(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,7));
     }
 
     @Test
-    public void threadTest8() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest8(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,8));
     }
 
     @Test
-    public void threadTest9() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest9(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,9));
     }
 
     @Test
-    public void threadTest10() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest10(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,10));
     }
 
     @Test
-    public void threadTest11() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest11(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,11));
     }
 
     @Test
-    public void threadTest12() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest12(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,12));
     }
 
     @Test
-    public void threadTest16() throws InterruptedException, ExecutionException {
-        ThreadChecker thread = new ThreadChecker();
+    public void threadTest16(){
         Assertions.assertTrue(ThreadChecker.threadPrime(bigArray,16));
     }
 }
